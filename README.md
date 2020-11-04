@@ -47,3 +47,7 @@ Ref: [Resource](https://askubuntu.com/questions/1009423/find-the-power-supply-ha
 ### Nvidia driver installation 
 
 Ref: [Resource](https://www.cyberciti.biz/faq/ubuntu-linux-install-nvidia-driver-latest-proprietary-driver/)
+
+## Udacity git styleguide
+
+Ref: [Resource](http://udacity.github.io/git-styleguide/)
