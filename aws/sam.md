@@ -39,4 +39,4 @@
 ## Resources
 - [Youtube](https://www.youtube.com/watch?v=9IYpGTS7Jy0)
 - [Airline Booking](https://github.com/aws-samples/aws-serverless-airline-booking)
-- 
+- [To continue](https://youtu.be/QBBewrKR1qg?t=767)
