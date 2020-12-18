@@ -35,3 +35,8 @@
 - 70+ managed templates IAM policies - [Best Practices](https://slip.link/sam-policies)
 
 ### SAM CLI
+
+## Resources
+- [Youtube](https://www.youtube.com/watch?v=9IYpGTS7Jy0)
+- [Airline Booking](https://github.com/aws-samples/aws-serverless-airline-booking)
+- 
