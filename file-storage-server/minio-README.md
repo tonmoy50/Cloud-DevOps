@@ -11,3 +11,6 @@ If Minio persistant ./data file has no background write permission
 ```
 sudo chown -R mobasshir /data && sudo chmod u+rxw /data
 ```
+
+## Resources
+1. [Try MinIO – Self-Hosted S3-Compliant High Performance Object Storage](https://geekflare.com/minio-object-storage/)
