@@ -16,3 +16,6 @@ sudo chown -R mobasshir /data && sudo chmod u+rxw /data
 1. [Try MinIO – Self-Hosted S3-Compliant High Performance Object Storage](https://geekflare.com/minio-object-storage/)
 2. [MinIO Python SDK for Amazon S3 Compatible Cloud Storage](https://docs.min.io/docs/python-client-quickstart-guide)
 3. [Python Client API Reference](https://docs.min.io/docs/python-client-api-reference)
+4. [Django minio backend](https://pypi.org/project/django-minio-backend/)
+5. [Django minio](https://pypi.org/project/django-minio/)
+6. [Django minio storage](https://django-minio-storage.readthedocs.io/en/latest/)
