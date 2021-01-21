@@ -19,3 +19,7 @@ sudo chown -R mobasshir /data && sudo chmod u+rxw /data
 4. [Django minio backend](https://pypi.org/project/django-minio-backend/)
 5. [Django minio](https://pypi.org/project/django-minio/)
 6. [Django minio storage](https://django-minio-storage.readthedocs.io/en/latest/)
+7. [Minio storage define - github](https://github.com/py-pa/django-minio-storage/blob/master/minio_storage/storage.py)
+8. [Django filer settings](https://django-filer.readthedocs.io/en/latest/settings.html)
+9. [Django filer settings - github](https://github.com/django-cms/django-filer/blob/master/filer/settings.py)
+10. [Django filer storage - github](https://github.com/django-cms/django-filer/blob/master/filer/storage.py)
