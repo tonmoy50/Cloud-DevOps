@@ -12,3 +12,6 @@ add user to a group:
 ```
 sudo usermod -aG docker $USER
 ```
+
+## Resources
+1. [How to copy docker images](https://stackoverflow.com/questions/23935141/how-to-copy-docker-images-from-one-host-to-another-without-using-a-repository)
