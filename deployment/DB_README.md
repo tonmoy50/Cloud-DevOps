@@ -41,7 +41,7 @@ Note: There should not be any space between environment variable name and value
 ##### To start the postgres container in detach mode, run the command:
 
 ```
-docker-compose up --build -d
+docker-compose up -d
 ```
 
 ### Resources
