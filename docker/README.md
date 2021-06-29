@@ -16,7 +16,14 @@ The `docker system prune` command removes all stopped containers, dangling image
 ```
 docker system prune -f
 ```
+If you want to tag a docker image and push to the registry do the following:
+
+```
+$ docker image tag rhel-httpd:latest registry-host:5000/myadmin/rhel-httpd:latest
+$ docker image push registry-host:5000/myadmin/rhel-httpd:latest
+```
 
 ## Resources
 1. [How to copy docker images](https://stackoverflow.com/questions/23935141/how-to-copy-docker-images-from-one-host-to-another-without-using-a-repository)
 2. [How To Remove Docker Containers, Images, Volumes, and Networks](https://linuxize.com/post/how-to-remove-docker-images-containers-volumes-and-networks/#:~:text=%2D%2Drm%20flag.-,Removing%20one%20or%20more%20containers,containers%20you%20want%20to%20remove.)
+3. [docker push](https://docs.docker.com/engine/reference/commandline/push/)
