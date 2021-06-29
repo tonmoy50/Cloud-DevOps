@@ -32,6 +32,18 @@ docker rm $(docker ps -aq)
 # Remove all images
 docker rmi $(docker images -q)
 ```
+To find all the containers and stop and remove them:
+```
+docker ps -a
+docker stop <container_id>
+docker rm -f <container_id>
+```
+To find all the images and stop and remove them:
+```
+docker images
+docker stop <image_id>
+docker rmi -f <image_id>
+```
 
 ## Resources
 1. [How to copy docker images](https://stackoverflow.com/questions/23935141/how-to-copy-docker-images-from-one-host-to-another-without-using-a-repository)
