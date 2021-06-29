@@ -22,6 +22,16 @@ If you want to tag a docker image and push to the registry do the following:
 $ docker image tag rhel-httpd:latest registry-host:5000/myadmin/rhel-httpd:latest
 $ docker image push registry-host:5000/myadmin/rhel-httpd:latest
 ```
+```
+# List all containers (only IDs)
+docker ps -aq
+# Stop all running containers
+docker stop $(docker ps -aq)
+# Remove all containers
+docker rm $(docker ps -aq)
+# Remove all images
+docker rmi $(docker images -q)
+```
 
 ## Resources
 1. [How to copy docker images](https://stackoverflow.com/questions/23935141/how-to-copy-docker-images-from-one-host-to-another-without-using-a-repository)
