@@ -56,6 +56,11 @@ To uninstall docker-compose:
 ```
 sudo rm $(which docker-compose)
 ```
+If docker is getting permission issue:
+```
+sudo gpasswd -a $USER docker
+newgrp docker
+```
 ## Resources
 1. [How to copy docker images](https://stackoverflow.com/questions/23935141/how-to-copy-docker-images-from-one-host-to-another-without-using-a-repository)
 2. [How To Remove Docker Containers, Images, Volumes, and Networks](https://linuxize.com/post/how-to-remove-docker-images-containers-volumes-and-networks/#:~:text=%2D%2Drm%20flag.-,Removing%20one%20or%20more%20containers,containers%20you%20want%20to%20remove.)
