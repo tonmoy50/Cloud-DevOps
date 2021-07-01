@@ -88,6 +88,12 @@ If the error comes again
 sudo dnf install wget
 ```
 
+## To install Nano
+
+```
+sudo yum install nano
+```
+
 ## Miniconda Installation on RHEL8
 
 - [Resource](https://deeplearning.lipingyang.org/2018/12/24/install-miniconda-on-centos-7-redhat-7/)
