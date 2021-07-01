@@ -49,3 +49,36 @@ Go to this [url](https://docs.conda.io/en/latest/miniconda.html#linux-installers
 ```
 bash Miniconda3-latest-Linux-x86_64.sh
 ```
+
+# RHEL Docker Setup
+
+```
+# sudo yum remove docker docker-common docker-selinux docker-engine-selinux docker-engine docker-ce
+# sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+# sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+# sudo yum install docker-ce
+```
+
+If the error persits
+
+```
+# yum-config-manager --enable REPOSITORY
+# yum install docker
+```
+
+If the error comes again
+
+```
+# subscription-manager register
+# subscription-manager list --available
+# subscription-manager attach --pool=pool_id
+# subscription-manager repos --enable=rhel-7-server-rpms
+# subscription-manager repos –enable=rhel-7-server-extras-rpms
+# sudo yum remove docker docker-common docker-selinux docker-engine-selinux docker-engine docker-ce
+# sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+# sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+# sudo yum install docker-ce
+# yum-config-manager --enable REPOSITORY
+# yum install docker
+# systemctl start docker.servic
+```
