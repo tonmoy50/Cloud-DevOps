@@ -82,3 +82,12 @@ If the error comes again
 # yum install docker
 # systemctl start docker.servic
 ```
+## Installing WGET
+
+```
+sudo dnf install wget
+```
+
+## Miniconda Installation on RHEL8
+
+- [Resource](https://deeplearning.lipingyang.org/2018/12/24/install-miniconda-on-centos-7-redhat-7/)
