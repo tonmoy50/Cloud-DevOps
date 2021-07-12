@@ -11,6 +11,15 @@ If Minio persistant ./data file has no background write permission
 ```
 sudo chown -R mobasshir /data && sudo chmod u+rxw /data
 ```
+If minio is having public access permission issue
+```
+# list default hosts after install: 
+mc config host ls
+# add your host: 
+mc config host add {hostName} {url} {apiKey} {apiSecret}
+# change bucket policy: 
+mc policy {policy} {host}/{bucket}
+```
 
 ## Resources
 1. [Try MinIO – Self-Hosted S3-Compliant High Performance Object Storage](https://geekflare.com/minio-object-storage/)
