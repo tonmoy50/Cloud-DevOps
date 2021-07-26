@@ -94,6 +94,12 @@ sudo dnf install wget
 sudo yum install nano
 ```
 
+## To open port on Cent OS 8
+
+```
+firewall-cmd --zone=public --add-port=55555/tcp --permanent
+```
+
 ## Miniconda Installation on RHEL8
 
 - [Resource](https://deeplearning.lipingyang.org/2018/12/24/install-miniconda-on-centos-7-redhat-7/)
