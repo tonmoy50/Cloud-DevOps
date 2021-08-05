@@ -71,6 +71,10 @@ docker-compose exec api python3 manage.py migrate
 docker-compose exec api python3 src/manage.py loaddata --app core group.json user.json
 docker-compose exec api python3 manage.py collectstatic
 ```
+To see the log from docker container
+```
+docker container logs --details container-id
+```
 ## Resources
 1. [How to copy docker images](https://stackoverflow.com/questions/23935141/how-to-copy-docker-images-from-one-host-to-another-without-using-a-repository)
 2. [How To Remove Docker Containers, Images, Volumes, and Networks](https://linuxize.com/post/how-to-remove-docker-images-containers-volumes-and-networks/#:~:text=%2D%2Drm%20flag.-,Removing%20one%20or%20more%20containers,containers%20you%20want%20to%20remove.)
