@@ -1,3 +1,4 @@
+## Setting up supervisor config
 First, install supervisord using apt-get package.
 
 Then go to this path /etc/supervisor/conf.d/ and create a file named celery.conf .
@@ -25,3 +26,23 @@ You can verify whether the process has been started using,
 ```
 supervisorctl
 ```
+
+## Optional: Enable supervisor web interface
+
+  open the file located in
+  ```
+  nano /etc/supervisor/supervisord.conf
+  ```
+
+  Add the following line to the file
+  ```
+  [inet_http_server]
+  port=*:9001
+  username=admin
+  password=admin
+  ```
+
+  Restart Supervisor
+  ```
+  systemctl restart supervisor
+  ```
