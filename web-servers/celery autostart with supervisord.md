@@ -11,4 +11,17 @@ stdout_logfile=/var/log/supervisor/celery.log
 stderr_logfile=/var/log/supervisor/celery.log
 user=ubuntu
 ```                                                                                                                                                  
-Then to start it working write this command  supervisorctl restart celery             
+Next, tell the Supervisor to know about the new config  
+```
+supervisorctl reread
+```
+
+Next, tell Supervisor to start the service
+```
+supervisorctl update
+```
+
+You can verify whether the process has been started using,
+```
+supervisorctl
+```
