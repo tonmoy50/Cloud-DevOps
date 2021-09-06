@@ -74,6 +74,20 @@ drwxrwxr-x  =>  media
 drwxrwxr-x  =>  static
 -rw-rw-r--    =>  file
 ```
+Adding Proxy/Port Forwarding
+```
+ProxyPreserveHost On
+ProxyRequests Off
+ServerName www.example.com
+ServerAlias example.com
+ProxyPass / http://localhost:8080/
+ProxyPassReverse / http://localhost:8080/
+```
+add needed modules for above to enable
+```
+sudo a2enmod proxy && sudo a2enmod proxy_http && sudo service apache2 restart
+```
+
 
 ## Reference:
 - https://www.digitalocean.com/community/tutorials/how-to-serve-django-applications-with-apache-and-mod_wsgi-on-debian-8
