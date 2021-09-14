@@ -7,7 +7,7 @@ Write the following command to celery.conf
 ```
 [program:celery]
 directory = /home/ubuntu/prod/api
-command = /home/ubuntu/anaconda3/envs/api_env/bin/celery -A prodapi worker -l info --without-gossip --without-mingle --without-heartbeat -Ofair --pool=solo   
+command = /home/ubuntu/anaconda3/envs/api_env/bin/celery -A prodapi worker -l info --without-gossip --without-mingle --without-heartbeat -Ofair -P gevent
 stdout_logfile=/var/log/supervisor/celery.log    
 stderr_logfile=/var/log/supervisor/celery.log
 user=ubuntu
