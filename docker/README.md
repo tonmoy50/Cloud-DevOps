@@ -16,6 +16,9 @@ The `docker system prune` command removes all stopped containers, dangling image
 ```
 docker system prune -f
 ```
+```
+docker system prune -a
+```
 If you want to tag a docker image and push to the registry do the following:
 
 ```
